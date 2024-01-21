@@ -6,3 +6,12 @@ GET http://localhost:8080/contacts/65ac62eda241d28ebf0eb62d
 GET http://localhost:8080/contacts/65ac62f7a241d28ebf0eb62f
 
 GET http://localhost:8080/contacts/65ac6302a241d28ebf0eb631
+
+//Render
+GET https://api-24h8.onrender.com/contacts
+
+GET https://api-24h8.onrender.com/contacts/65ac62eda241d28ebf0eb62d
+
+GET https://api-24h8.onrender.com/contacts/65ac62f7a241d28ebf0eb62f
+
+GET https://api-24h8.onrender.com/contacts/65ac6302a241d28ebf0eb631
