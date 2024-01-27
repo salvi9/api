@@ -1,17 +1,64 @@
-//Local Host
+// Local Host
+### Get all contacts
 GET http://localhost:8080/contacts
-
+### Get by ID
 GET http://localhost:8080/contacts/65ac62eda241d28ebf0eb62d
-
+### Get by ID
 GET http://localhost:8080/contacts/65ac62f7a241d28ebf0eb62f
-
+### Get by ID
 GET http://localhost:8080/contacts/65ac6302a241d28ebf0eb631
 
-//Render
+### POST contact (create) 
+POST http://localhost:8080/contacts HTTP/1:1
+content-type: application/json
+
+{
+    "firstName": "Alex",
+    "lastName": "Deng",
+    "email": "adeng@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "06/15/1991"
+}
+
+### PUT contact (update)
+PUT http://localhost:8080/contacts/65b553de1781761e4eebb8e9 HTTP/1:1
+Content-Type: application/json
+
+{
+    "firstName": "Alex",
+    "lastName": "Pastrami",
+    "email": "adeng@gmail.com",
+    "favoriteColor": "Yellow",
+    "birthday": "06/15/1991"
+}
+
+### DELETE contact
+DELETE http://localhost:8080/contacts/65b553de1781761e4eebb8e9 HTTP/1:1
+
+// Render
+### Get all Contacts
 GET https://api-24h8.onrender.com/contacts
-
+### Get by ID
 GET https://api-24h8.onrender.com/contacts/65ac62eda241d28ebf0eb62d
-
+### Get by ID
 GET https://api-24h8.onrender.com/contacts/65ac62f7a241d28ebf0eb62f
-
+### Get by ID
 GET https://api-24h8.onrender.com/contacts/65ac6302a241d28ebf0eb631
+
+### POST contact
+POST https://api-24h8.onrender.com/contacts HTTP/1:1
+
+### PUT Contact (update)
+PUT https://api-24h8.onrender.com/contacts/65ac62eda241d28ebf0eb62d HTTP/1:1
+Content-Type: application/json
+
+{
+    "firstName": "Alex",
+    "lastName": "Pastrami",
+    "email": "adeng@gmail.com",
+    "favoriteColor": "Yellow",
+    "birthday": "06/15/1991"
+}
+
+### Delete Contact
+DELETE https://api-24h8.onrender.com/contacts/65ac62eda241d28ebf0eb62d HTTP/1:1
