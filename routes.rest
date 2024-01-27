@@ -47,6 +47,15 @@ GET https://api-24h8.onrender.com/contacts/65ac6302a241d28ebf0eb631
 
 ### POST contact
 POST https://api-24h8.onrender.com/contacts HTTP/1:1
+content-type: application/json
+
+{
+    "firstName": "Alex",
+    "lastName": "Deng",
+    "email": "adeng@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "06/15/1991"
+}
 
 ### PUT Contact (update)
 PUT https://api-24h8.onrender.com/contacts/65ac62eda241d28ebf0eb62d HTTP/1:1
